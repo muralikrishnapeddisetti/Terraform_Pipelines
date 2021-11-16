@@ -1,12 +1,13 @@
 resource "aws_instance" "ec2" {
   ami = "ami-04ad2567c9e3d7893" //ap-south-1
   instance_type = "t2.micro"
+  region="us-east-1"
   tags = {
     Name = "Jenkins-Testing"
   }
 }
 provider "aws" {
-  access_key = "8888888888"
-  secret_key ="88888888"
+  access_key = "AKIAQOWZZMQHWB3Z5QVO"
+  secret_key ="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"
   region = "us-east-1"
 }
