@@ -1,7 +1,6 @@
 resource "aws_instance" "ec2" {
-  ami = "ami-04ad2567c9e3d7893" //ap-south-1
+  ami = "ami-04ad2567c9e3d7893" 
   instance_type = "t2.micro"
-  region="us-east-1"
   tags = {
     Name = "Jenkins-Testing"
   }
